@@ -1,0 +1,208 @@
+[
+    {
+      "id": 1,
+      "title": "Introduction to React",
+      "description": "Learn the basics of React.",
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "duration": "6 weeks",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "question": "What is React?",
+          "options": ["A library", "A framework", "A programming language", "None of the above"],
+          "correctAnswer": "A library"
+        },
+        {
+          "type": "short-answer",
+          "question": "Who developed React?",
+          "correctAnswer": "Facebook"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Understanding Components in React",
+      "description": "Learn about React components and their usage.",
+      "url": "https://www.youtube.com/embed/Ke90Tje7VS0",
+      "duration": "8 weeks",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "question": "What are React components?",
+          "options": ["Functions", "Reusable UI blocks", "Variables", "Loops"],
+          "correctAnswer": "Reusable UI blocks"
+        },
+        {
+          "type": "short-answer",
+          "question": "What are the two types of components?",
+          "correctAnswer": "Class and Functional"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "State and Props in React",
+      "description": "Understanding how to use state and props in React.",
+      "url": "https://www.youtube.com/embed/Oioo0IdoEls",
+      "duration": "10 weeks",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "question": "What is state in React?",
+          "options": ["A function", "A variable", "A data storage", "An event"],
+          "correctAnswer": "A data storage"
+        },
+        {
+          "type": "short-answer",
+          "question": "What are props used for?",
+          "correctAnswer": "Passing data between components"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "React Lifecycle Methods",
+      "description": "Learn about React component lifecycle methods.",
+      "url": "https://www.youtube.com/embed/XuFDcZABiDQ",
+      "duration": "12 weeks",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "question": "When is `componentDidMount` called?",
+          "options": ["Before render", "After render", "On state change", "On prop change"],
+          "correctAnswer": "After render"
+        },
+        {
+          "type": "short-answer",
+          "question": "What is `componentWillUnmount` used for?",
+          "correctAnswer": "Cleanup tasks"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "React Hooks Overview",
+      "description": "Introduction to React Hooks.",
+      "url": "https://www.youtube.com/embed/dpw9EHDh2bM",
+      "duration": "14 weeks",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "question": "Which hook is used for state management?",
+          "options": ["useEffect", "useState", "useReducer", "useContext"],
+          "correctAnswer": "useState"
+        },
+        {
+          "type": "short-answer",
+          "question": "What is `useEffect` used for?",
+          "correctAnswer": "Side effects"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "React Router Introduction",
+      "description": "Learn how to set up navigation in React.",
+      "url": "https://www.youtube.com/embed/Law7wfdg_ls",
+      "duration": "6 weeks",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "question": "What is React Router used for?",
+          "options": ["Styling", "Navigation", "State management", "Event handling"],
+          "correctAnswer": "Navigation"
+        },
+        {
+          "type": "short-answer",
+          "question": "What component is used for navigation?",
+          "correctAnswer": "Link"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Handling Forms in React",
+      "description": "Learn how to manage forms in React applications.",
+      "url": "https://www.youtube.com/embed/IKOV5xT-4p8",
+      "duration": "8 weeks",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "question": "Which hook can be used for form state management?",
+          "options": ["useState", "useForm", "useContext", "useRef"],
+          "correctAnswer": "useState"
+        },
+        {
+          "type": "short-answer",
+          "question": "What is controlled input?",
+          "correctAnswer": "Input with React state"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "React Context API",
+      "description": "Understand the Context API for state management.",
+      "url": "https://www.youtube.com/embed/CI7EYWmRDJE",
+      "duration": "10 weeks",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "question": "What does the Context API solve?",
+          "options": [
+            "State management",
+            "Styling",
+            "Routing",
+            "Component lifecycle management"
+          ],
+          "correctAnswer": "State management"
+        },
+        {
+          "type": "short-answer",
+          "question": "What hook is used to consume context?",
+          "correctAnswer": "useContext"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Optimizing React Performance",
+      "description": "Learn performance optimization techniques in React.",
+      "url": "https://www.youtube.com/embed/cCOL7MC4Pl0",
+      "duration": "12 weeks",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "question": "What does React.memo do?",
+          "options": ["Caches data", "Optimizes performance", "Prevents re-render", "Handles state"],
+          "correctAnswer": "Prevents re-render"
+        },
+        {
+          "type": "short-answer",
+          "question": "What does `useCallback` optimize?",
+          "correctAnswer": "Functions"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Deploying React Applications",
+      "description": "Learn how to deploy React apps to production.",
+      "url": "https://www.youtube.com/embed/5z1fSpZNXhU",
+      "duration": "14 weeks",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "question": "What tool is often used to deploy React apps?",
+          "options": ["Webpack", "Vercel", "Babel", "Docker"],
+          "correctAnswer": "Vercel"
+        },
+        {
+          "type": "short-answer",
+          "question": "Which command builds the React app for production?",
+          "correctAnswer": "npm run build"
+        }
+      ]
+    }
+  ]
+  
