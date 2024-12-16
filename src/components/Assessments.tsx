@@ -12,7 +12,7 @@ interface AssessmentProps {
 }
 
 const Assessment: React.FC<AssessmentProps> = ({ questions, onComplete }) => {
-  const [answers, setAnswers] = useState<string[]>([]);
+  const [answers, setAnswers] = useState<string[]>(new Array(questions.length).fill(""));
   const [feedback, setFeedback] = useState<string>("");
 
   const handleAnswer = (index: number, answer: string) => {
@@ -27,16 +27,17 @@ const Assessment: React.FC<AssessmentProps> = ({ questions, onComplete }) => {
     );
 
     // Update feedback
-    setFeedback(isCorrect ? "Correct! You can proceed." : "Some answers are incorrect.");
+    setFeedback(isCorrect ? "Correct! You can proceed. 🎉" : "Some answers are incorrect. 😅");
 
     if (isCorrect) {
       // Delay calling `onComplete` to show feedback
       setTimeout(() => {
         onComplete();
-      }, 2000); // 2-second delay
+      }, 5000); // 5-second delay
     }
   };
 
+  // const isAllAnswered = questions.every((_, i) => answers[i] && answers[i].trim() !== "");
   const isAllAnswered = questions.every((_, i) => answers[i] && answers[i].trim() !== "");
 
   return (
@@ -50,10 +51,20 @@ const Assessment: React.FC<AssessmentProps> = ({ questions, onComplete }) => {
           onAnswer={(answer) => handleAnswer(index, answer)}
         />
       ))}
-      <button onClick={handleSubmit} disabled={!isAllAnswered}>
+      <div style={{ display: "flex", alignItems: "center", gap: "10px", marginTop: "20px" }}>
+      <button onClick={handleSubmit} style={{background:"teal",color:"#fff"}} disabled={!isAllAnswered}>
         Submit
       </button>
-      <p>{feedback}</p>
+      <p
+        style={{
+          margin: 0,
+          color: feedback.includes("Correct") ? "green" : feedback ? "red" : "black",
+          fontWeight: "bold",
+        }}
+      >
+        {feedback}
+      </p>
+    </div>
     </div>
   );
 };

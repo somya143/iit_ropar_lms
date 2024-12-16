@@ -29,6 +29,11 @@ const Navbar: React.FC = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+        position: "fixed", // Fix navbar to the top
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 1000,
       }}
     >
       {/* IIT Ropar Logo */}
